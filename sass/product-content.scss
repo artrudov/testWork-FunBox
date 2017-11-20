@@ -118,9 +118,23 @@
   color: #ffffff;
 }
 
-.product-content--disabled .product-content__wrapper,
-.product-content--disabled .product-content__corner {
+.product-content:hover .product-content__weight {
+  background-color: #2ea8e6;
+}
+
+.product-content:hover .product-content__wrapper,
+.product-content:hover .product-content__corner {
+  border-color: #2ea8e6;
+}
+
+.products__item .product-content--disabled .product-content__wrapper,
+.products__item .product-content--disabled .product-content__corner {
   background-color: #f2f2f2;
+  border-color: #b3b3b3;
+}
+
+.product-content--disabled:hover .product-content__wrapper,
+.product-content--disabled:hover .product-content__corner {
   border-color: #b3b3b3;
 }
 
@@ -135,41 +149,24 @@
   color: #b3b3b3;
 }
 
-.product-content--selected > .product-content__wrapper,
-.product-content--selected .product-content__corner {
+.product-content--disabled:hover .product-content__weight {
+  background-color: #b3b3b3;
+}
+
+.products__item .product-content--selected .product-content__wrapper,
+.products__item  .product-content--selected .product-content__corner {
   border-color: #d91667;
-}
-
-.product-content:hover .product-content__weight {
-  background-color: #2ea8e6;
-}
-
-.product-content:hover .product-content__weight {
-  background-color: #2ea8e6;
-}
-
-.product-content:hover > .product-content__wrapper,
-.product-content:hover .product-content__corner {
-  border-color: #2ea8e6;
 }
 
 .product-content--selected:hover .product-content__weight {
   background-color: #d91667;
 }
 
-.product-content--selected ~ .products__text {
-  display: none;
-}
-
-.product-content--selected ~ .products__text--selected {
-  display: block;
-}
-
 .product-content--selected-hover .product-content__weight {
   background-color: #d91667;
 }
 
-.product-content--selected-hover:hover .product-content__weight {
+.products__item .product-content--selected-hover:hover .product-content__weight {
   background-color: #e62e7a;
 }
 
@@ -186,8 +183,12 @@
   display: block;
 }
 
-.product-content--disabled:hover .product-content__weight {
-  background-color: #b3b3b3;
+.product-content--selected ~ .products__text {
+  display: none;
+}
+
+.product-content--selected ~ .products__text--selected {
+  display: block;
 }
 
 .product-content--disabled ~ .products__text {
