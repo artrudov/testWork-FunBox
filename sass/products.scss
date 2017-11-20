@@ -1,0 +1,101 @@
+.products {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.products__container {
+  max-width: 1150px;
+}
+
+.products__question {
+  margin: 0;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: "Exo 2.0", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.products__list {
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.products__item {
+  margin-right: 80px;
+}
+
+.products__text {
+  margin: 0;
+  padding: 3px 0 0;
+  text-align: center;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+
+  &--selected {
+    display: none;
+  }
+
+  &--disabled {
+    display: none;
+    color: #ffff66;
+    font-size: 13px;
+  }
+}
+
+.products__link {
+  border-bottom: 1px dashed #1698d9;
+  color: #1698d9;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .products__question {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .products__list {
+    margin: 0;
+    width: 768px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .products__item {
+    margin: 0 30px;
+    width: 320px;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .products__question {
+    margin: 0;
+  }
+
+  .products__list {
+    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products__item {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+}

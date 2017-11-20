@@ -1,0 +1,46 @@
+{
+  "name": "testWork-funBox",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Тестовое задание от FunBox",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "7.1.x",
+    "browser-sync": "2.18.x",
+    "gulp": "3.9.x",
+    "gulp-plumber": "1.1.x",
+    "gulp-postcss": "7.0.x",
+    "gulp-sass": "^3.1.0",
+    "gulp-csso": "3.0.0",
+    "gulp-rename": "1.2.2",
+    "run-sequence": "2.2.0",
+    "del": "3.0.0",
+    "stylelint-config-htmlacademy": "0.1.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "8.2"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  }
+}

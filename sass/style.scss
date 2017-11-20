@@ -1,0 +1,14 @@
+/// Подключение Normalize
+@import "base/normalize";
+
+/// Подключение миксинов и переменных
+@import "utils/mixins";
+@import "utils/variables";
+
+/// Подключение базовых стилей
+@import "base/scaffolding";
+@import "base/typography";
+
+/// Основные блоки разметки и элементы главной страницы
+@import "products";
+@import "product-content";

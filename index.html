@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Тестовое задание для FunBox</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <main class="products">
+    <div class="products__container">
+      <p class="products__question">Ты сегодня покормил кота?</p>
+      <ul class="products__list">
+        <li class="products__item">
+          <article class="product-content">
+            <div class="product-content__wrapper product-content__wrapper--top">
+              <div class="product-content__corner"></div>
+              <p class="product-content__promo">Сказочное заморское яство</p>
+              <p class="product-content__promo product-content__promo--selected-hover">Котэ не одобряет?</p>
+            </div>
+            <div class="product-content__wrapper product-content__wrapper--main">
+              <h2 class="product-content__title">
+              <span class="big-size">Нямушка </span>
+              с фуа-гра</h2>
+              <p class="product-content__text">
+                <span class="block"><strong>10</strong> порций </span> мышь в подарок</p>
+              <p class="product-content__weight">0,5<span class="small-size">кг</span></p>
+            </div>
+          </article>
+          <p class="products__text">Чего сидишь? Порадуй котэ,
+            <a href="order.html" class="products__link">купи</a>
+          </p>
+          <p class="products__text products__text--selected">Печень утки разварная с артишоками.</p>
+          <p class="products__text products__text--disabled">Печалька, с фуа-гра закончилось</p>
+        </li>
+
+        <li class="products__item">
+          <!--классы product-content-selected product-content-selected-hover отвечает за выбор карточки, а также за
+          эффект наведения после выбора карточки-->
+          <article class="product-content product-content--selected product-content--selected-hover">
+            <div class="product-content__wrapper product-content__wrapper--top">
+              <div class="product-content__corner"></div>
+              <p class="product-content__promo">Сказочное заморское яство</p>
+              <p class="product-content__promo product-content__promo--selected-hover">Котэ не одобряет?</p>
+            </div>
+            <div class="product-content__wrapper product-content__wrapper--main">
+              <h2 class="product-content__title">
+              <span class="big-size">Нямушка </span>
+              с рыбой</h2>
+              <p class="product-content__text">
+                <span class="block"><strong>40</strong> порций </span><strong>2</strong> мыши в подарок</p>
+              <p class="product-content__weight">2<span class="small-size">кг</span></p>
+            </div>
+          </article>
+          <p class="products__text">Чего сидишь? Порадуй котэ,
+            <a href="order.html" class="products__link">купи</a>
+          </p>
+          <p class="products__text products__text--selected">Головы щучьи с чесноком да свежайшая сёмгушка.</p>
+          <p class="products__text products__text--disabled">Печалька, с рыбой закончилось</p>
+        </li>
+
+        <li class="products__item">
+          <!--класс product-content-disabled отвечает за доступность карточки-->
+          <article class="product-content product-content--disabled">
+            <div class="product-content__wrapper product-content__wrapper--top">
+              <div class="product-content__corner"></div>
+              <p class="product-content__promo">Сказочное заморское яство</p>
+              <p class="product-content__promo product-content__promo--selected-hover">Котэ не одобряет?</p>
+            </div>
+            <div class="product-content__wrapper product-content__wrapper--main">
+              <h2 class="product-content__title">
+              <span class="big-size">Нямушка </span>
+              с курой</h2>
+              <p class="product-content__text">
+                <span class="block"><strong>100</strong> порций </span><strong>5</strong> мышей в подарок
+                <span class="block">заказчик доволен</span></p>
+              <p class="product-content__weight">5<span class="small-size">кг</span></p>
+            </div>
+          </article>
+          <p class="products__text">Чего сидишь? Порадуй котэ,
+            <a href="order.html" class="products__link">купи</a>
+          </p>
+          <p class="products__text products__text--selected">Филе из цыплят с трюфелями в бульоне.</p>
+          <p class="products__text products__text--disabled">Печалька, с курой закончилось</p>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>

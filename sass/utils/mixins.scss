@@ -1,0 +1,17 @@
+/// Сброс внешних и внутренних отступов
+@mixin reset-indent {
+  padding: 0;
+  margin: 0;
+}
+
+/// Основной шрифты
+@mixin font-regular ($size, $weight, $style, $line, $color) {
+  font: {
+    size: $size;
+    family: "Trebuchet MS", "Arial", sans-serif;
+    weight: $weight;
+    style: $style;
+  }
+  line-height: $line;
+  color: $color;
+}

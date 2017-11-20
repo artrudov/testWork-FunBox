@@ -1,0 +1,39 @@
+body {
+  @include reset-indent;
+  @include font-regular (17px, 400, normal, 125%, #000000);
+  padding: 5px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  background-image: url("../img/bg-pattern.png"),
+  linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.big-size {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  padding-bottom: 19px;
+}
+
+.small-size {
+  display: block;
+  padding-top: 9px;
+  font-size: 21px;
+  line-height: 22px;
+}
+
+@media (max-width: $desktop-width) {
+  body {
+    height: 100%;
+  }
+}
